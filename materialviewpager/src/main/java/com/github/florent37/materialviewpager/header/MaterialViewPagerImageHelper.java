@@ -3,9 +3,6 @@ package com.github.florent37.materialviewpager.header;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Looper;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewPropertyAnimatorListenerAdapter;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
@@ -20,6 +17,10 @@ import com.bumptech.glide.request.target.Target;
 import com.github.florent37.materialviewpager.MaterialViewPager;
 
 import android.os.Handler;
+
+import androidx.annotation.Nullable;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.ViewPropertyAnimatorListenerAdapter;
 
 /**
  * Created by florentchampigny on 12/06/15.

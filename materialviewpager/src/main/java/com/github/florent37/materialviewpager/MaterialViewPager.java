@@ -7,9 +7,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +14,10 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+
+import androidx.core.view.ViewCompat;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.widget.Toolbar;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.github.florent37.materialviewpager.header.HeaderDesign;
@@ -309,7 +310,7 @@ public class MaterialViewPager extends FrameLayout implements ViewPager.OnPageCh
         viewpagerContainer = (ViewGroup) findViewById(R.id.viewpager_layout);
         logoContainer = (ViewGroup) findViewById(R.id.logoContainer);
 
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mToolbar = findViewById(R.id.toolbar);
         if (settings.disableToolbar) {
             mToolbar.setVisibility(INVISIBLE);
         }

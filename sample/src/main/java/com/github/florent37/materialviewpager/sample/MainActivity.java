@@ -1,16 +1,13 @@
 package com.github.florent37.materialviewpager.sample;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.appcompat.widget.Toolbar;
 
 import com.crashlytics.android.Crashlytics;
 import com.github.florent37.materialviewpager.MaterialViewPager;
@@ -104,7 +101,7 @@ public class MainActivity extends DrawerActivity {
         });
 
         mViewPager.getViewPager().setOffscreenPageLimit(mViewPager.getViewPager().getAdapter().getCount());
-        mViewPager.getPagerTitleStrip().setViewPager(mViewPager.getViewPager());
+//        mViewPager.getPagerTitleStrip().setViewPager(mViewPager.getViewPager());
 
         final View logo = findViewById(R.id.logo_white);
         if (logo != null) {
@@ -117,4 +114,5 @@ public class MainActivity extends DrawerActivity {
             });
         }
     }
+
 }

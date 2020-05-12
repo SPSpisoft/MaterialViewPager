@@ -1,12 +1,11 @@
 package com.github.florent37.materialviewpager;
 
 import android.content.Context;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import androidx.appcompat.widget.Toolbar;
 
-import android.support.v4.view.ViewCompat;
+import androidx.core.view.ViewCompat;
 
 import static com.github.florent37.materialviewpager.Utils.dpToPx;
 
